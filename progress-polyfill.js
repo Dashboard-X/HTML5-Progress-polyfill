@@ -156,9 +156,8 @@ var self = window.ProgressPolyfill = {
 				progress.removeAttribute('aria-valuenow');
 			}
 		}
-		    
 		if(progress.position !== -1) {
-		   progress.style.paddingRight = progress.offsetWidth * (1-progress.position) + 'px';
+		   progress.style.paddingRight = progress.clientWidth * (1-progress.position) + 'px';
 		}
 	},
 	
